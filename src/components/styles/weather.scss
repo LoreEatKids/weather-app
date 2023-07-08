@@ -1,0 +1,112 @@
+.app_container {
+    display: flex;
+    justify-content: center;
+
+    .chakra-skeleton { width: 80%; border-radius: 25px; }
+}
+
+.weather_app {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 50px;
+
+  .weather_wrapper {
+    background-color: #9a8fd3;
+    height: 80%;
+    width: 65%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    article {
+      background-color: #0d1111;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .weather_quickview {
+        border-radius: inherit;
+        margin: 40px;
+        padding: 15px 70px;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        p {margin-bottom: unset !important;}
+
+        .weather_city {
+            line-height: 33px;
+            margin-bottom: 25px;
+            &_name { font-size: 35px; font-weight: 900; }
+        }
+
+        .weather_infos {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+    
+            h1 {
+                margin-bottom: unset !important;
+                font-size: 50px;
+                height: 100%;
+            }
+        }
+    }
+
+    .forecast_container {
+        margin-top: 10%;
+        
+        h1 {
+            font-size: 30px;
+            color: #30283c;
+            margin-left: 40px;
+        }
+
+        .forecast_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 15px;
+            .forecast {
+                background-color: #fff;
+                width: 140px;
+                height: 140px;
+                border-radius: 15px;
+                
+                &_first {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 0 9px;
+                  padding-right: 11px !important;
+
+                  h1 {margin: 0 !important;}
+                }
+
+                &_second {
+                  p {
+                    text-align: center;
+                    margin-top: 20px;
+                    color: black;
+                    line-height: 16px;
+                  }
+                }
+            }
+        }
+    }
+  }
+}
+
+.nocity {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20%;
+}

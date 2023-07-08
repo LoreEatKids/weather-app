@@ -1,0 +1,30 @@
+.input_container {
+    padding: 0 6rem;
+    position: relative;
+}
+
+nav {
+    margin-bottom: 20px;
+    .container {
+        max-width: 1650px !important;
+    }
+
+    .navbar_comp { 
+        font-size: 16px;
+        margin-bottom: 0 !important;
+    }
+}
+
+.cities_list {
+    margin-top: 20px;
+    padding-left: 1rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+
+    li { 
+        cursor: pointer;
+        &:hover { opacity: .6; transition: all 300ms; }
+    }
+}
