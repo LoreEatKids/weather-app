@@ -10,3 +10,5 @@ App Created With:
   <li>Weatherapi.com API</li>
   <li>Geolocation API + OpenCage Reverse Geocoding API</li>
 </ul>
+
+![alt "Preview Img"](https://github.com/LoreEatKids/weather-app/blob/main/preview.png?raw=true)
